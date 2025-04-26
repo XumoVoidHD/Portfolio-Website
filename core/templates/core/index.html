@@ -1,0 +1,328 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedansh Sahay - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div id="text-container">Hello 👋</div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">Vedansh Sahay</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="http://127.0.0.1:8000/blog" target="_blank">
+                            Check Out My Blog <span class="arrow">&#8599;</span>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Vedansh Sahay</h1>
+                <p>I'm a passionate developer committed to creating seamless and impactful digital experiences.</p>    
+                <a href="#projects" class="btn btn-primary btn-block">Scroll To View My Work</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="{% static 'images/default.jpg' %}" alt="Your Name">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Vedansh Sahay, a second-year student at VIT Chennai, pursuing my degree in Computer Science and Engineering. I have a deep interest in technology, programming, and problem-solving, and I am passionate about applying my skills to real-world challenges.</p>
+                    
+                    <p>I recently completed an internship at Numatix Solutions as a Quantitative Software Engineer, where I had the opportunity to work on advanced algorithms and data analysis tools. During my time there, I gained hands-on experience in Python, machine learning, and quantitative analysis, which further strengthened my problem-solving abilities.</p>
+                    
+                    <p>I'm constantly looking to learn new technologies and work on exciting projects that allow me to grow both academically and professionally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/ibkr.png' %}" alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>IBKR Options Trading Bot</h3>
+                        <p>A trading bot designed to automate options trading using the Interactive Brokers API.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/XumoVoidHD/ibkr-new" class="btn btn-sm btn-outline">
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/capital_flow.png' %}" alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>CapitalFlow Web Scraper</h3>
+                        <p>A Python-based web scraper that extracts financial data from multiple sources.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/XumoVoidHD/CapitalFlow-webscrapper" class="btn btn-sm btn-outline">
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/townhall.png' %}" alt="Project Three">
+                    </div>
+                    <div class="project-info">
+                        <h3>Townhall</h3>
+                        <p>A clone of twitter I built using python, djano, html and css. You can make edit and delete tweets.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/XumoVoidHD/townhall" class="btn btn-sm btn-outline">
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Firebase</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Responsive Design</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 5 -->
+                <div class="skill-card">
+                    <h3>Mobile Development</h3>
+                    <ul class="skill-list">
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>iOS</li>
+                        <li>Android</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 6 -->
+                <div class="skill-card">
+                    <h3>Other</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Testing</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Email</span>
+                                <p>vedanshsahay05@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Phone</span>
+                                <p>+91 8368584627</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Location</span>
+                                <p>Chennai, Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/XumoVoidHD" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vedansh-sahay-62812027a/" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/CarsonBond_" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send Me a Message</h3>
+                    <form id="myForm">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Vedansh Sahay</h3>
+                    <p>&copy; <span id="current-year"></span> All Rights Reserved</p>
+                </div>
+                <div class="footer-links">
+                    <div class="social-icons">
+                        <a href="https://github.com/XumoVoidHD" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vedansh-sahay-62812027a/" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/CarsonBond_" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}">
+
+    </script>
+
+</body>
+</html>
+
