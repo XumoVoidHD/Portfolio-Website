@@ -1,6 +1,8 @@
 # Vedansh Sahay Portfolio Website
 
 This website is for web dev project
+![image](https://github.com/user-attachments/assets/979ee75a-0d79-4e68-aa61-ddb4500ea7f6)
+
 
 ## Website
 
