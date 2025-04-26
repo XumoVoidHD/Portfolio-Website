@@ -18,16 +18,16 @@ frontpage.html-> Page of blog website
 
 Other pages for blog website are in blog->templates/blog
 
-## Main Site HTML
+## [Main Site HTML](https://github.com/XumoVoidHD/Portfolio-Website/blob/main/core/templates/core/index.html)
 core->templates/core->index.html
 
-## Main Site CSS
+## [Main Site CSS](https://github.com/XumoVoidHD/Portfolio-Website/blob/main/crashblog/static/css/styles.css)
 crashblog->static->css
 
-## Main Site JS
+## [Main Site JS](https://github.com/XumoVoidHD/Portfolio-Website/blob/main/crashblog/static/js/script.js)
 crashblog->static->js
 
-## Main Site Images
+## [Main Site Images](https://github.com/XumoVoidHD/Portfolio-Website/tree/main/crashblog/static/images)
 crashblog->static->images
 
 
