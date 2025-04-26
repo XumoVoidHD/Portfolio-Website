@@ -4,7 +4,11 @@ This website is for web dev project
 ![image](https://github.com/user-attachments/assets/979ee75a-0d79-4e68-aa61-ddb4500ea7f6)
 
 
-## Website
+## Tech Stack
+1. Django
+2. HTML
+3. CSS
+4. JavaScript
 
 ## How to run
 type: python manage.py runserver 
